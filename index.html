@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <!--cabeçalho da página -->
+    <head>
+        <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Calculadora</title>
+    </head>
+
+     <!-- Elementos visuais -->
+     <body>
+         <!--Criando a área da calculadora -->
+         
+         <div class="calculator">
+             
+             <input type="texto" id="display" disabled>
+             
+              <!--Botões da calculadora -->
+              <div class="buttons">
+                  
+                  <!-- esse botao aqui eu tbm nao sei pq nn quer funcionar, eu acho q eu coloquei tudo certo -->
+                  <button onclick="clearDisplay()">C</button>
+                  
+                  <button onclick="appendSymbol('*')">x</button>
+                  
+                  <!-- aqui vai ser a msm coisa, eu nao consigo botar o codigo sorry -->
+                  <button onclick="appendSymbol('/')">÷</button>
+                  
+                  <!--juliano eu nao consigo botar o codigo desse botao, meu teclado e mt diferente da escola e nn vai, vou botar outro botao ;)-->
+                  <button onclick="deletLast()">←</button>
+                  
+                  <button onclick="appendSymbol('7')">7</button>
+                  <button onclick="appendSymbol('8')">8</button>
+                  <button onclick="appendSymbol('9')">9</button>
+                  <button onclick="appendSymbol('-')">-</button>
+               
+                  <button onclick="appendSymbol('4')">4</button>
+                  <button onclick="appendSymbol('5')">5</button>
+                  <button onclick="appendSymbol('6')">6</button>
+                  <button onclick="appendSymbol('+')">+</button>
+                  
+                  <button onclick="appendSymbol('1')">1</button>
+                  <button onclick="appendSymbol('2')">2</button>
+                  <button onclick="appendSymbol('3')">3</button>
+                  <button onclick="calculate()">=</button>
+                  
+                  <button onclick="appendSymbol('0')" class="zero">0</button>
+                  <button onclick="appendSymbol('.')">.</button>
+                  
+                  
+                  
+                  
+              </div>
+              
+         </div>
+         <!-- carregar arquivo JavaScript -->
+         <script src="script.js"></script>
+     </body>
+     
+    
+    
+</html>
